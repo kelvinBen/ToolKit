@@ -66,10 +66,4 @@ public class PDFConvertUtil {
 		return null;
 	}
 
-	public static void main(String[] args) {
-		String filePath = "C:\\Users\\tom\\Desktop\\Image\\";
-		String pdfConvertImage = PDFConvertImage("C:\\Users\\tom\\Desktop\\果核數位appGuard原始碼防護系統v2.1-使用者操作手冊.pdf",filePath, "png");
-		Zip4JUtil.zip(filePath, filePath, true, "123456");
-		IO.writeContent(pdfConvertImage, new File("C:\\Users\\tom\\Desktop\\start.html"));
-	}
 }
