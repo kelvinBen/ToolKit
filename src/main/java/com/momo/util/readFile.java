@@ -130,7 +130,7 @@ public class readFile {
 						// System.out.println("文件:" + file2.getAbsolutePath());
 						String absolutePath = file2.getAbsolutePath();
 
-						if (absolutePath.contains("com\\bangcle")) {
+						if (absolutePath.contains("包名")) {
 							readFile.addAll(readFile(file2.getAbsolutePath()));
 						}
 					}
@@ -163,7 +163,7 @@ public class readFile {
 //		 Map<String, String> readProFile = readProFile("C:\\Users\\tom\\Desktop\\zh_NNC.properties");
 		 
 		 
-		 List<String> traverseFolder = traverseFolder2("D:\\DevelopTool\\git\\client\\PekingeseSystem");
+		 List<String> traverseFolder = traverseFolder2("文件路径");
 		 
 		 for(int i=0;i<traverseFolder.size();i++){
 			 System.out.println(traverseFolder.get(i));
